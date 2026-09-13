@@ -69,7 +69,7 @@
   .searchrow input{flex:1;padding:11px 12px}
   .scan{background:var(--teal);color:#fff;border-radius:12px;padding:0 14px;font-size:20px;min-width:52px}
   body.purchase .scan{background:var(--purchase)}
-  .chips{display:flex;gap:4px;overflow-x:auto;padding:4px 6px 2px;scrollbar-width:none}
+  .chips{display:flex;gap:8px;overflow-x:auto;padding:8px 12px 2px;scrollbar-width:none}
   .chips::-webkit-scrollbar{display:none}
   .chip{white-space:nowrap;background:#fff;border:1.5px solid var(--line);color:var(--ink);padding:7px 13px;border-radius:999px;font-size:13px;font-weight:700}
   .chip.on{background:var(--teal);color:#fff;border-color:var(--teal)}
@@ -184,7 +184,7 @@
   <div class="card">
     <div class="brand"><img src="icons/icon-192.png" alt="" />
       <div><h1 id="brandName">Mobile POS</h1><span>with Inventory</span></div></div>
-    <h2 id="authTitle">መተግበሪያ ለመፍትሔ</h2>
+    <h2 id="authTitle">Sign in</h2>
     <p class="sub" id="authSub">Log in to start ringing up sales.</p>
     <div id="nameField" class="hidden"><label>Your name</label><input id="fName" placeholder="e.g. Nancy Smith" autocomplete="name" /></div>
     <label>Email</label><input id="fEmail" type="email" placeholder="you@store.com" autocomplete="username" />
@@ -206,7 +206,7 @@
   <div class="modebar">
     <div class="seg">
       <button id="mSale" class="on" onclick="setMode('SALE')">SALE</button>
-     <!--<button id="mBuy" onclick="setMode('PURCHASE')">PURCHASE</button>-->
+      <button id="mBuy" onclick="setMode('PURCHASE')">PURCHASE</button>
     </div>
     <div class="party"><select id="party"><option value="">Walk-in customer</option></select></div>
   </div>
@@ -215,9 +215,9 @@
   <div id="posView" style="display:flex;flex-direction:column;flex:1;min-height:0">
     <div class="tools">
       <div class="searchrow">
-       <!-- <input id="search" placeholder="Search or scan a product…" />-->
+        <input id="search" placeholder="Search or scan a product…" />
         <button class="scan" id="scanBtn" title="Scan barcode">▣</button>
-        <!--<button class="scan" id="addBtn" title="Add product" style="background:var(--ink)">＋</button>-->
+        <button class="scan" id="addBtn" title="Add product" style="background:var(--ink)">＋</button>
       </div>
     </div>
     <div class="chips" id="cats"></div>
