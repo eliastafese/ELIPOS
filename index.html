@@ -358,7 +358,7 @@ let signup=false;
 $("authToggle").onclick=(e)=>{ e.preventDefault(); signup=!signup;
   $("authTitle").textContent=signup?"መተግበሪያ ለመፍትሔ":"Sign in";
   $("authSub").textContent=signup?"Set up a cashier login.":"Log in to start ringing up sales.";
-  $("authBtn").textContent=signup?"መተግበሪያ ለመፍትሔ":"Sign in";
+  $("authBtn").textContent=signup?"Create account":"Sign in";
   $("nameField").classList.toggle("hidden",!signup);
   $("authToggle").innerHTML=signup?'Have an account? <a href="#">Sign in</a>':'New here? <a href="#">Create an account</a>';
   $("authToggle").querySelector("a").onclick=$("authToggle").onclick; clearMsg();
