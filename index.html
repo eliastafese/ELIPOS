@@ -362,7 +362,7 @@ $("authToggle").onclick=(e)=>{ e.preventDefault(); signup=!signup;
   $("authSub").textContent=signup?"Set up a cashier login.":"Log in to start ringing up sales.";
   $("authBtn").textContent=signup?"Create account":"Sign in";
   $("nameField").classList.toggle("hidden",!signup);
-  $("authToggle").innerHTML=signup?'Have an account? <a href="#">Sign in</a>':'አዲስ ኖት? <a href="#">አካውንት ይፍጠሩ እባክሆን</a>';
+  $("authToggle").innerHTML=signup?'አካውንት ይፍጠሩ? <a href="#">Sign in</a>':'አዲስ ኖት? <a href="#">አካውንት ይፍጠሩ እባክሆን</a>';
   $("authToggle").querySelector("a").onclick=$("authToggle").onclick; clearMsg();
 };
 $("authBtn").onclick=async()=>{
