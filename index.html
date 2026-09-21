@@ -349,7 +349,7 @@ const unitOf=(p)=> mode==="SALE" ? Number(p.sales_price) : Number(p.purchase_pri
     authError("⚠️ Add your Supabase URL and anon key to config.js first."); return;
   }
   sb = supabase.createClient(CFG.SUPABASE_URL, CFG.SUPABASE_ANON_KEY);
-  $("brandName").textContent=CFG.STORE_NAME||"Mobile POS";
+  $("brandName").textContent=CFG.STORE_NAME||"መተግበሪያ ለመፍትሔ";
   $("storeName").textContent=CFG.STORE_NAME||"Store";
   $("tTaxLbl").textContent=(CFG.TAX_NAME||"Tax")+" ("+(TAX*100).toFixed(2).replace(/\.00$/,'')+"%)";
   sb.auth.getSession().then(({data})=>{ if(data.session){ session=data.session; startApp(); }});
@@ -362,7 +362,7 @@ $("authToggle").onclick=(e)=>{ e.preventDefault(); signup=!signup;
   $("authSub").textContent=signup?"Set up a cashier login.":"Log in to start ringing up sales.";
   $("authBtn").textContent=signup?"Create account":"Sign in";
   $("nameField").classList.toggle("hidden",!signup);
-  $("authToggle").innerHTML=signup?'Have an account? <a href="#">Sign in</a>':'New here? <a href="#">Create an account</a>';
+  $("authToggle").innerHTML=signup?'Have an account? <a href="#">Sign in</a>':'አዲስ ኖት? <a href="#">አካውንት ይፍጠሩ እባክሆን</a>';
   $("authToggle").querySelector("a").onclick=$("authToggle").onclick; clearMsg();
 };
 $("authBtn").onclick=async()=>{
