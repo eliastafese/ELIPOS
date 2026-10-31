@@ -182,7 +182,10 @@
 <!-- LOGIN -->
 <div id="login">
   <div class="card">
-    <div class="brand"><img src="icons/icon-192.png" alt="" /><!---->
+    <div class="brand"><img src="icons/icon-192.png" alt="" />
+      
+      <!---->
+      
       <div><h1 id="brandName">Mobile POS</h1><span>ለመድሃኒት ቤት</span></div></div>
     <h2 id="authTitle">መተግበሪያ ለመፍትሔ</h2>
     <p class="sub" id="authSub">Log in to start ringing up sales.</p>
@@ -205,9 +208,10 @@
 
   <div class="modebar">
     <div class="seg">
-      <button id="mSale" class="on" onclick="setMode('SALE')">SALE</button>
+      <button id="mSale" class="on" onclick="setMode('SALE')">SALE</button>      
       
       <!---->
+      
       <button id="mBuy" onclick="setMode('PURCHASE')">PURCHASE</button>
     </div>
     <div class="party"><select id="party"><option value="">Walk-in customer</option></select></div>
@@ -249,11 +253,12 @@
   </div>
 
   <nav class="nav">
-    <button id="navPos" class="on" onclick="showView('pos')"><span class="ic">🛒</span>POS</button>
+    <button id="navPos" class="on" onclick="showView('pos')"><span class="ic">🛒</span>POS</button>    
+
+    <!--Orders/Low stock-->
     
-    <!--<button id="navOrders" onclick="showView('orders')"><span class="ic">🧾</span>Orders</button>
-    
-    <button id="navStock" onclick="showView('stock')"><span class="ic">📦</span>Low stock</button>-->
+    <button id="navOrders" onclick="showView('orders')"><span class="ic">🧾</span>Orders</button>    
+    <button id="navStock" onclick="showView('stock')"><span class="ic">📦</span>Low stock</button>
   </nav>
 </div>
 
